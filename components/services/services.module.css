@@ -1,0 +1,53 @@
+.serviceContainer {
+    background-color: #F4F6FD;
+    max-width: 100%;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serviceCarousel {
+    display: flex;
+    gap: 10px;
+}
+.bgNew{
+    background-image: url("../../public/Assets/Group\ 23.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+}
+
+.contactus{
+    width: 100%;
+   height: 300px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactusText{
+    font-size: 2.6em;
+}
+
+@media (max-width: 970px) {
+    .about{
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .serviceContainer {
+        padding: 0px;
+    }
+    .serviceCarousel {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+}

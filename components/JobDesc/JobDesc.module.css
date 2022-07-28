@@ -1,0 +1,52 @@
+.jdWrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+.jobHeading {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+
+
+.jobDesc {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #070707;
+    margin-top: 20px;
+}
+
+
+.applyNow {
+    padding: 20px;
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    position: sticky;
+    top: 0%;
+}
+
+.jobShare {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+@media (max-width: 970px) {}
+
+@media (max-width: 767px) {
+    .jdWrap {
+        padding: 10px;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}

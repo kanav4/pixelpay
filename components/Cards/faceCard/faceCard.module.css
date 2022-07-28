@@ -1,0 +1,35 @@
+.cardContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cardImg {
+    padding: 20px
+}
+.cardImgGrad {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    background-color: rgb(231, 231, 231);
+    filter: grayscale(100%);
+}
+.cardImgGrad:hover {
+    background: linear-gradient(131.25deg, #4038B0 14.14%, #F4F6FD 84.76%);
+    cursor: pointer;
+    filter: grayscale(0);
+}
+.names {
+    font-size: 24px;
+    font-weight: 400px;
+}
+.names p {
+    margin: 20px 0 5px 0;
+}
+.names span {
+    font-size: 20px;
+    color: #757575;
+}

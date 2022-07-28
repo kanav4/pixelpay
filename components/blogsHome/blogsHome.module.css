@@ -1,0 +1,29 @@
+.teamContainer {
+    background-color: #ffffff;
+    max-width: 100%;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+@media (max-width: 1250px)  {
+    .faceCardContainer{
+        width: 950px;
+    }
+}
+
+@media (max-width: 970px) {
+    .teamContainer{
+        width: auto;
+    }
+    .faceCardContainer{
+        width: auto;
+    }
+}
+

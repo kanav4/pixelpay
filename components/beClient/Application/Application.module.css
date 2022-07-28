@@ -1,0 +1,100 @@
+.trFlex2,
+.item3container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 5%;
+    max-width: 1440px;
+    max-height: 717px;
+    background-color: #fff;
+}
+
+.item1container {
+    padding: 10px;
+    display: flex;
+
+    row-gap: 10px;
+    column-gap: 5%;
+    max-width: 1440px;
+    max-height: 717px;
+    background-color: #fff;
+}
+
+.item4container {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    row-gap: 10px;
+    column-gap: 5%;
+    max-width: 1440px;
+    max-height: 717px;
+    background-color: #fff;
+}
+
+.item5container {
+    text-align: center;
+}
+
+.trFlex2 {
+    max-width: 1048px;
+    margin: 10px auto;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.item1,
+.item2 {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+}
+
+.textarea {
+    width: 100%;
+}
+
+.button {
+    width: 200px;
+    background-color: #4038B0;
+    color: white;
+    font-size: large;
+}
+
+.button1 {
+    width: 200px;
+    background-color: #4038B0;
+    color: white;
+    font-size: large;
+    position: absolute;
+    right: 12px;
+    padding: 8px 14px;
+}
+
+
+
+.item2 {
+    display: flex;
+    column-gap: 10px;
+}
+
+.input,
+.textarea,
+.button {
+    border: 1px solid #dfdddd;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+@media (max-width: 767px) {
+    .item1container {
+        flex-direction: column;
+    }
+}

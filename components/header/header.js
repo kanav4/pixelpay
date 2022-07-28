@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from 'next/image';
-import { BsSearch } from "react-icons/bs";
-import { ImCross } from "react-icons/im";
 import logo from '../../public/Assets/Pixel-pay-media-logo-03-1 2.png'
 export default function Nav({ home }) {
   const [query, setQuery] = React.useState("");
@@ -84,32 +82,27 @@ export default function Nav({ home }) {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href={"/category"}>
+                  <Link href={"/services"}>
                     <a className="nav-link">Our Services</a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href={"/category"}>
+                  <Link href={"/about"}>
                     <a className="nav-link">About Us</a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href={"/category"}>
+                  <Link href={"/career"}>
                     <a className="nav-link">Careers</a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href={"/category"}>
-                    <a className="nav-link">Technology</a>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href={"/category"}>
+                  <Link href={"/blog"}>
                     <a className="nav-link">Blog</a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href={"/category"}>
+                  <Link href={"/contact"}>
                     <a className="nav-link">Contact Us</a>
                   </Link>
                 </li>

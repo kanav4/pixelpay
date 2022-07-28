@@ -1,0 +1,42 @@
+.ourStory{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.year{
+    font-size: 5em;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 900;
+    color: #e1e1e1;
+}
+
+.year:hover{
+    color: #14113A;
+}
+
+.storyContent{
+    background-color: #14113A;
+    color: white;
+    height: 397px;
+    padding: 20px;
+}
+
+.storyContent h2{
+    font-size: 2rem;
+}
+
+.aboutImg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+.aboutImg .image {
+    width: 100%;
+    height: 100%;
+    position: relative !important;
+    object-fit: cover;
+}

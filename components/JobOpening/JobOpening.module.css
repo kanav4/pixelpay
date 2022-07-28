@@ -1,0 +1,19 @@
+.joWrap {
+    background: #F4F6FD;
+    padding: 10px;
+     margin: auto;
+     margin-bottom: 40px;
+}
+
+.currentOpenings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px;
+}
+
+
+ @media (max-width: 767px) {
+    .currentOpenings {
+        grid-template-columns: 1fr;
+    }
+ }

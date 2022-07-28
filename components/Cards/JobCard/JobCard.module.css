@@ -1,0 +1,138 @@
+.JobCard {
+    max-width: 585px;
+    min-height: 248px;
+    background: #fff;
+    padding: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.JobCardActive {
+    max-width: 585px;
+    min-height: 248px;
+    padding: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #14113A;
+    background-image: url('/Assets/blur_3.png');
+    background-position: bottom;
+}
+
+.JobCard:hover {
+    background: #14113A;
+    background-image: url('/Assets/blur_3.png');
+    background-position: bottom;
+}
+
+.JobCardActive .jcRole, .JobCardActive .jcExpereince {
+    color: #fff;
+}
+
+.jcWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.jcHead {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.jcOpening {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translatey(20%);
+    color: #E3E7FF;
+    font-size: 5em;
+    line-height: 1.45;
+    font-weight: 600;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.JobCard:hover .jcOpening,
+.JobCard:hover .jcRole,
+.JobCard:hover .jcExpereince {
+    color: #fff;
+}
+
+.JobCard:hover .applyBtn {
+    display: block;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.JobCard:hover .applyBtn:hover {
+    background: white;
+    color: #14113A;
+    border: 1px solid #322B89;
+}
+
+.jcRole {
+    color: #000;
+    font-size: 1.8em;
+    line-height: 1.75em;
+    font-weight: 600;
+    margin: 0 !important;
+    position: relative;
+}
+
+.jcRole::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 302px;
+    background: #D1D0D0;
+    left: 0;
+    bottom: 0px;
+}
+
+.jcExpereince {
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.25em;
+    margin: 10px 0 0 0 !important;
+}
+
+.applyBtn {
+    background: white;
+    width: 160px;
+    display: flex;
+    justify-items: center;
+    border-radius: 4px;
+    align-items: center;
+    font-size: 1em;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #14113A;
+    transition: 0.3s;
+    border: 1px solid #322B89;
+    height: 51px;
+    display: none;
+}
+
+
+.applyBtn:hover {
+    background: white;
+    color: #14113A;
+    border: 1px solid #322B89;
+}
+
+@media (max-width: 767px) {
+    .jcRole {
+        font-size: 1.4em;
+        line-height: 1.4em;
+    }
+
+    .jcExpereince {
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+}
