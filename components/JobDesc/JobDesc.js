@@ -35,7 +35,6 @@ export default function JobDesc({ item }) {
           <p>Our team is our biggest asset. We have a group of highly talented and experienced professionals who are passionate about what they do. We're also a close-knit team, so there's a great sense of camaraderie among everyone who works here. We all work together to create the best possible campaigns for our clients, and we have a lot of fun doing it.</p>
         </div>
       </div>
-      <div style={{ float: "right",}}>
         <div className={styles.applyNow}>
           <p className={styles.jobDesc}>If you think you've got what it takes, then we'd love to hear from you. Send us your CV and a cover letter explaining why you want to work with us, and we'll take it from there.</p>
           <div className="btn-purple">
@@ -49,7 +48,6 @@ export default function JobDesc({ item }) {
             <BsFacebook />
             <BsTwitter />
           </div>
-        </div>
       </div>
     </div>
   );

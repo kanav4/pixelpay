@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './why.module.css';
 import Image from 'next/image'
 import { BsArrowRight } from "react-icons/bs";
-import man from '/public/Assets/man.png';
+import man from '../../public/Assets/man.png';
 import Carousel from 'react-elastic-carousel';
 
 

@@ -82,6 +82,7 @@
     flex-direction: column;
     column-gap: 5%;
     background-color: #F4F6FD;
+    padding-bottom: 40px;
   }
   .flexitem1 {
     padding: 10px;

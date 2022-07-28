@@ -9,7 +9,7 @@ export default function GetInTouch({sectionName, sectionTitle, sectionText, sect
         <div className={styles.getInTouch}>
           <div className={styles.content}>
             <div className={styles.headings}>
-              <div className="sectionName textCenter">
+              <div className="sectionName">
                 <p>{sectionName}</p>
                 <svg
                   className="sectionBorder"

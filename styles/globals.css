@@ -47,9 +47,6 @@ section {
   display: block;
 }
 
-/* .rec-item-wrapper{
-  padding: 0 10px !important;
-} */
 .container-carousel {
   max-width: 1330px;
   margin: auto;
@@ -262,9 +259,33 @@ table {
   height: 10px;
 } */
 
+.ourValueTab {
+  font-size: 1.1rem;
+  display: flex;
+  background-color: #F4F6FD;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  border-radius: 4px;
+}
+.valueTabsActive {
+  color: #fff;
+  font-size: 1.1rem;
+display: flex;
+background-color: #4038B0;
+align-content: center;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+height: 70px;
+border-radius: 4px;
+}
+
 .sectionTitle {
   font-weight: 600;
-  font-size: 2.4em;
+  font-size: 2.1rem;
   line-height: 1.1em;
   color: #070707;
 }
@@ -278,8 +299,6 @@ table {
   margin-bottom: 40px;
   padding: 10px;
 }
-
-
 
 .bgNew {
   background-image: url("../public/Assets/Group\ 25.png");
@@ -327,5 +346,14 @@ table {
   .bg-blue {
     background-color: #F4F6FD;
     padding: 10px;
+  }
+  .container-carousel-sml{
+    width: auto;
+  }
+  .sectionHeader{
+    margin-top: 0;
+  }
+  .sectionWrap{
+    padding-top: 30px;
   }
 }

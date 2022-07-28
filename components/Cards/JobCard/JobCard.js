@@ -2,7 +2,7 @@ import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import styles from "./JobCard.module.css";
 
-export default function JobCard({ ServIcon,active, item}) {
+export default function JobCard({ ServIcon, active, item }) {
 
   return (
     <div className={active?styles.JobCardActive:styles.JobCard}>
@@ -14,8 +14,8 @@ export default function JobCard({ ServIcon,active, item}) {
           </div>
           <span className={styles.jcOpening}>{item.openings}</span>
         </div>
-        <div style={{display: "flex", justifyContent:"space-between", alignItems:"flex-end"}}>
-          <div style={{display:"flex", flexDirection:"column", marginBottom:"5px", width:"100%"}}>
+        <div className={styles.jcContent}>
+          <div className={styles.jcContentWrap}>
             <p className={styles.jcRole}>{item.title}</p>
             <p className={styles.jcExpereince}>
               {item.experience} <br />{item.jobType} <br/> Gurgaon

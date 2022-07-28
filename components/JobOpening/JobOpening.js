@@ -26,10 +26,9 @@ export default function JobOpening({ state, setState }) {
           </div>
           <div className={styles.currentOpenings}>
             {data.map((item, i) => (
-              <div onClick={() => setState(i)}>
+              <div key={i} onClick={() => setState(i)}>
                 <JobCard
                   active={state === i}
-                  key={i}
                   ServIcon={MediaBuyingIco}
                   item={item}
                 />
@@ -41,7 +40,9 @@ export default function JobOpening({ state, setState }) {
 
       <div className="container">
         {data.map((item, i) => (
-          <>{state === i ? <JobDesc item={item} /> : null}</>
+          <div key={i} >
+          {state === i ? <JobDesc item={item} /> : null}
+          </div>
         ))}
       </div>
     </>

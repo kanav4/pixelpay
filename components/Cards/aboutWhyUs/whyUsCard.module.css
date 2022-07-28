@@ -4,7 +4,7 @@
     border-radius: 4px;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
     cursor: pointer;
-    max-height: 300px;
+    max-height: 100%;
 }
 .wuWrap {
     margin: 30px;
@@ -66,3 +66,5 @@
 .whyUsCard:hover .wuName, .whyUsCard:hover .wuInfo p {
     color: #fff !important;
 }
+
+

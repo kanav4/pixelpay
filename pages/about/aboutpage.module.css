@@ -17,10 +17,26 @@
     
 }
 
+.teamMembers1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+.teamMembers2 {
+    display: grid;
+    max-width: 100%;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(4, auto);
+    margin-bottom: 20px;
+}
+
 .faceCardContainer{
     display: grid;
     gap: 10px;
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
     grid-template-columns: repeat(3,1fr);;
 }
 
@@ -54,10 +70,16 @@
     .whyUs {
         grid-template-columns: repeat(2, 1fr);
     }
+    .teamMembers2 {
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
 @media (max-width: 767px) {
     .whyUs {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .teamMembers2 {
+        grid-template-columns: repeat(1, auto);
     }
 }

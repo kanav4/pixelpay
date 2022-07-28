@@ -1,27 +1,28 @@
 import React, { useState } from "react";
 import Nav from "../../components/header/header";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
-import AboutBanner from "/public/Assets/blogBanner.png";
+import AboutBanner from "../../public/Assets/blogBanner.png";
 import styles from "./aboutpage.module.css";
 import WhyUsCard from "../../components/Cards/aboutWhyUs/whyUsCard";
 import { BsArrowRight } from "react-icons/bs";
 import FaceCard from "../../components/Cards/faceCard";
-import Abhishek from "/public/Assets/Profile photos/abhishek.png";
-import Anuj from "/public/Assets/Profile photos/anuj.png";
-import Swati from "/public/Assets/Profile photos/swati.png";
-import Parth from "/public/Assets/Profile photos/parth.png";
-import Aastha from "/public/Assets/Profile photos/aastha.png";
-import Vishal from "/public/Assets/Profile photos/vishal.png";
-import Tarun from "/public/Assets/Profile photos/tarun.png";
+import Abhishek from "../../public/Assets/Profile photos/abhishek.png";
+import Anuj from "../../public/Assets/Profile photos/anuj.png";
+import Swati from "../../public/Assets/Profile photos/swati.png";
+import Parth from "../../public/Assets/Profile photos/parth.png";
+import Aastha from "../../public/Assets/Profile photos/aastha.png";
+import Vishal from "../../public/Assets/Profile photos/vishal.png";
+import Tarun from "../../public/Assets/Profile photos/tarun.png";
 import History from "../../components/history";
 import OurValues from "../../components/ourValues/ourValues";
 import Footer from "../../components/footer";
 import GetInTouch from "../../components/getInTouch/getInTouch";
-import getInTouchImg from "/public/Assets/getintouch.png"
+import getInTouchImg from "../../public/Assets/getintouch.png"
+import ContactBar from "../../components/contactBar/contactBar";
 
 
 export default function AboutPage() {
-  const [state, setState] = useState(0);
+  
 
   return (
     <div>
@@ -89,24 +90,8 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <div className="bgNew">
-        <div className="container">
-          <div className="contactus">
-            <div className="contactusText">
-              Let’s get started on your next big project! <br />
-              Connect with us today <br />
-              So we can help you achieve your goals.
-            </div>
-            <div className="btn-white">
-              <p>Contact us</p>{" "}
-              <span>
-                <BsArrowRight />
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <OurValues state={state} setState={setState} />
+     <ContactBar/>
+      <OurValues />
       <div className={styles.teamContainer}>
         <div className="container">
           <div className="sectionHeader">
@@ -125,14 +110,7 @@ export default function AboutPage() {
               Meet the talented individuals who keep our ship sailing smoothly
             </h2>
           </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              maxWidth: "1200px",
-            }}
+          <div className={styles.teamMembers1}
           >
             <div className={styles.faceCardContainer}>
               <FaceCard
@@ -151,15 +129,7 @@ export default function AboutPage() {
                 person={Swati}
               />
             </div>
-            <div
-              style={{
-                maxWidth: "100%",
-                display: "grid",
-                justifyContent: "center",
-                gap: "10px",
-                gridTemplateColumns: "repeat(4,auto)",
-                marginBottom: "20px",
-              }}
+            <div className={styles.teamMembers2}
             >
               <FaceCard name={"Tarun Rao"} des={"SEO Lead"} person={Tarun} />
               <FaceCard

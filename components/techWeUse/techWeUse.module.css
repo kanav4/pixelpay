@@ -10,6 +10,26 @@
     margin: 20px 0;
 }
 
+.techImgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: 600px;
+    padding: 30px;
+}
+
+
+.techHover {
+    border: 1px solid #DEDEDE;
+    transition: all 0.3s ease-out;
+    display: grid;
+    align-items: center;
+}
+
+.techHover:hover {
+    box-shadow: 0px 0px 32px -11px #a0a0a0;
+}
+
 
 .aboutImg {
     width: 100%;

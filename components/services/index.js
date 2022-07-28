@@ -5,6 +5,9 @@ import eCommerceIco from "../../public/Assets/megaphone-dynamic-gradient.png";
 import LeadGenIco from "../../public/Assets/video-camera-dynamic-gradient-min.png";
 import Carousel from 'react-elastic-carousel';
 import { BsArrowRight } from "react-icons/bs";
+import ContactBar from "../contactBar/contactBar";
+
+
 
 export default function Service() {
 
@@ -49,18 +52,8 @@ export default function Service() {
           </div>
         </div>
       </div>
-      <div className="bgNew">
-        <div className="container" >
-          <div className="contactus">
-            <div className="contactusText">
-              Give wings to your business <br /> with our out-of-the-box solutions
-            </div>
-            <div className='btn-white'>
-              <p>Explore Now</p> <span><BsArrowRight /></span>
-            </div>
-          </div>
-        </div>
-      </div>
+     <ContactBar/>
+     
     </>
   );
 }

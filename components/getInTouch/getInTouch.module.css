@@ -58,6 +58,14 @@
 }
 
 @media (max-width: 767px) {
+
+
+.getInTouch{
+
+    grid-template-columns: 1fr;
+    margin: 0;
+
+}
     .about{
         grid-template-columns: 1fr;
         padding: 5px;
@@ -66,4 +74,5 @@
     .aboutImg {
        display: none;
       }
+
 }

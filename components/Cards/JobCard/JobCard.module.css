@@ -35,6 +35,19 @@
     gap: 20px;
 }
 
+.jcContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.jcContentWrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
 .jcHead {
     display: flex;
     justify-content: space-between;

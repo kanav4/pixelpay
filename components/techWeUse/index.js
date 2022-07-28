@@ -1,16 +1,21 @@
 import Image from "next/image";
 import styles from "./techWeUse.module.css";
 import TechBanner from "../../public/Assets/techWeUse.png";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsWordpress } from "react-icons/bs";
+import AWS from "../../public/Assets/aws.png";
+import Next from "../../public/Assets/Next.png";
+import Wordpress from "../../public/Assets/Wordpress.png";
+import mongoDB from "../../public/Assets/mongoDB.png";
+import Python from "../../public/Assets/Python.png";
+import GraphQL from "../../public/Assets/GraphQL.png";
 
 export default function TechWeUse() {
   return (
-
     <div className="container">
       <div className={styles.techContainer}>
         <div className={styles.text}>
           <div className="sectionHeader">
-          <div className="sectionName textCenter">
+            <div className="sectionName textLeft">
               <p>Technology</p>
               <svg
                 className="sectionBorder"
@@ -21,9 +26,10 @@ export default function TechWeUse() {
                 <rect width="486" height="14" fill="#D1CDFF" />
               </svg>
             </div>
-            <h2 className="sectionTitle">Frameworks and systems we use</h2>
+            <h2 className="sectionTitle">Technology we use</h2>
             <p className="sectionDesc">
-            We amalgamate technology with marketing to deliver digital excellence.
+              We help clients stay competitive, reach new markets and augment
+              shareholder value
             </p>
             <div className="btn-purple">
               <p>Join Us</p>
@@ -33,14 +39,29 @@ export default function TechWeUse() {
             </div>
           </div>
         </div>
-        <div className={styles.aboutImg} >
-          <Image
-            src={TechBanner}
-            alt="Picture of the author"
-            className={styles.image}
-            layout="fill"
-            objectFit='contain'
-          />
+        <div className={styles.techImgs}>
+          <div className={styles.techHover}>
+            <Image src={AWS} />
+          </div>
+          <div className={styles.techHover}>
+            <Image src={Next} />
+          </div>
+
+          <div className={styles.techHover}>
+            <Image src={Wordpress} />
+          </div>
+
+          <div className={styles.techHover}>
+            <Image src={mongoDB} />
+          </div>
+
+          <div className={styles.techHover}>
+            <Image src={Python} />
+          </div>
+
+          <div className={styles.techHover}>
+            <Image src={GraphQL} />
+          </div>
         </div>
       </div>
     </div>

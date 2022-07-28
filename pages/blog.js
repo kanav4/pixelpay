@@ -2,9 +2,9 @@ import React from "react";
 import Footer from "../components/footer";
 import Nav from "../components/header/header";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
-import BlogBanner from "/public/Assets/blogBanner.png";
+import BlogBanner from "../public/Assets/blogBanner.png";
 import BlogCard from "../components/Cards/BlogCard";
-import blogimg from '/public/Assets/ggl.png'
+import blogimg from '../public/Assets/ggl.png'
 
 export default function BlogPage() {
   return (

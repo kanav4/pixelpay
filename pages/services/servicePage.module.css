@@ -1,0 +1,18 @@
+
+.whyUs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 970px) {
+    .whyUs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+
+@media (max-width: 767px) {
+.whyUs {
+    grid-template-columns: repeat(1, 1fr);
+}
+}

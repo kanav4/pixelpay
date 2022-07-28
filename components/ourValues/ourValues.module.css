@@ -1,0 +1,53 @@
+.valueCol {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.valueTabs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.valueTabsActive {
+    font-size: 1.1rem;
+  display: flex;
+  background-color: #4038B0;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  border-radius: 4px;
+}
+
+.valueContent h2{
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    color:#14113A;
+}
+
+.valueContent p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #070707;
+}
+
+
+@media (max-width: 767px) {
+    .valueCol {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    
+}

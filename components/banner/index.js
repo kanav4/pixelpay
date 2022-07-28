@@ -11,7 +11,7 @@ export default function Banner() {
     return (
         <div className={styles.banner}>
             <Carousel
-                showThumbs={true}
+                showThumbs={false}
                 infiniteLoop={true}
                 showStatus={false}
             >
