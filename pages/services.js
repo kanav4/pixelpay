@@ -2,8 +2,8 @@ import React from "react";
 import GetInTouch from "../components/getInTouch/getInTouch";
 import Nav from "../components/header/header";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
-import ServiceImg from "../public/Assets/Target.png";
-import man from "../public/Assets/man.png";
+import ServiceImg from "/public/Assets/Target.png";
+import man from "/public/Assets/man.png";
 import { BsArrowRight } from "react-icons/bs";
 
 export default function ServicePage() {

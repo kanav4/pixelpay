@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import Nav from "../../components/header/header";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
-import AboutBanner from "../../public/Assets/blogBanner.png";
+import AboutBanner from "/public/Assets/blogBanner.png";
 import styles from "./aboutpage.module.css";
 import WhyUsCard from "../../components/Cards/aboutWhyUs/whyUsCard";
 import { BsArrowRight } from "react-icons/bs";
 import FaceCard from "../../components/Cards/faceCard";
-import Abhishek from "../../public/Assets/Profile photos/abhishek.png";
-import Anuj from "../../public/Assets/Profile photos/anuj.png";
-import Swati from "../../public/Assets/Profile photos/swati.png";
-import Parth from "../../public/Assets/Profile photos/parth.png";
-import Aastha from "../../public/Assets/Profile photos/aastha.png";
-import Vishal from "../../public/Assets/Profile photos/vishal.png";
-import Tarun from "../../public/Assets/Profile photos/tarun.png";
+import Abhishek from "/public/Assets/Profile photos/abhishek.png";
+import Anuj from "/public/Assets/Profile photos/anuj.png";
+import Swati from "/public/Assets/Profile photos/swati.png";
+import Parth from "/public/Assets/Profile photos/parth.png";
+import Aastha from "/public/Assets/Profile photos/aastha.png";
+import Vishal from "/public/Assets/Profile photos/vishal.png";
+import Tarun from "/public/Assets/Profile photos/tarun.png";
 import History from "../../components/history";
 import OurValues from "../../components/ourValues/ourValues";
 import Footer from "../../components/footer";
 import GetInTouch from "../../components/getInTouch/getInTouch";
-import getInTouchImg from "../../public/Assets/getintouch.png"
+import getInTouchImg from "/public/Assets/getintouch.png"
 
 
 export default function AboutPage() {
