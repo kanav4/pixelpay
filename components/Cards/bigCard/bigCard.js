@@ -1,6 +1,6 @@
 import styles from "./bigCard.module.css";
 import Link from "next/link";
-import {google} from '../../../public/Assets/image 4-1.png'
+import {google} from '..//Assets/image 4-1.png'
 export default function BigCard({ posts }) {
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);

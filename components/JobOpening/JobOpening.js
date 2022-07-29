@@ -1,6 +1,6 @@
 import JobCard from "../Cards/JobCard/JobCard";
 import styles from "./JobOpening.module.css";
-import MediaBuyingIco from "../../public/Assets/4-3.png";
+import MediaBuyingIco from "/Assets/4-3.png";
 import data from "../../data.json";
 import JobDesc from "../JobDesc/JobDesc";
 

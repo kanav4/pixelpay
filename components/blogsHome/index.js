@@ -1,7 +1,7 @@
 import styles from "./blogsHome.module.css";
 import { BsArrowRight } from "react-icons/bs";
 import BlogCard from "../Cards/BlogCard";
-import blogimg from '../../public/Assets/ggl.png'
+import blogimg from '/Assets/ggl.png'
 
 
 export default function BlogsHome() {

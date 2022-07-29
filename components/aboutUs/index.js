@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './about.module.css';
 import Image from 'next/image'
 import { BsArrowRight } from "react-icons/bs";
-import man from '../../public/Assets/man.png';
+import man from '/Assets/man.png';
 export default function AboutUs() {
     return (
         <div className='container'>

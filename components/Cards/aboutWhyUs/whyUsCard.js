@@ -1,5 +1,5 @@
 import styles from "./whyUsCard.module.css";
-import ServIcon from "../../../public/Assets/megaphone.png";
+import ServIcon from "/Assets/megaphone.png";
 import Image from "next/image";
 
 export default function WhyUsCard({ title, content }) {

@@ -1,8 +1,8 @@
 import FaceCard from "../Cards/faceCard";
 import styles from "./ourTeam.module.css";
-import vl from '../../public/Assets/vaibhav.png'
-import vanya from '../../public/Assets/vanya.png'
-import kaju from '../../public/Assets/abhi.png'
+import vl from '/Assets/vaibhav.png'
+import vanya from '/Assets/vanya.png'
+import kaju from '/Assets/abhi.png'
 
 export default function OurTeam() {
   return (

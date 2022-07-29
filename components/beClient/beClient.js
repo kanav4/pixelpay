@@ -1,9 +1,9 @@
 import ContactCard from "../Cards/contactCard/ContactCard";
 import styles from "./beClient.module.css";
-import LocationIcon from "../../public/Assets/location.png";
-import EmailIcon from "../../public/Assets/mail.png";
-import BellIcon from "../../public/Assets/bell.png";
-import ScreenIcon from "../../public/Assets/screen.png";
+import LocationIcon from "/Assets/location.png";
+import EmailIcon from "/Assets/mail.png";
+import BellIcon from "/Assets/bell.png";
+import ScreenIcon from "/Assets/screen.png";
 import { MdAmpStories } from "react-icons/md";
 import Application from "./Application";
 

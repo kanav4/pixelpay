@@ -1,8 +1,8 @@
 import ServiceCard from "../Cards/ServiceCard/ServiceCard";
 import styles from "./services.module.css";
-import MediaBuyingIco from "../../public/Assets/4-3.png";
-import eCommerceIco from "../../public/Assets/megaphone-dynamic-gradient.png";
-import LeadGenIco from "../../public/Assets/video-camera-dynamic-gradient-min.png";
+import MediaBuyingIco from "/Assets/4-3.png";
+import eCommerceIco from "/Assets/megaphone-dynamic-gradient.png";
+import LeadGenIco from "/Assets/video-camera-dynamic-gradient-min.png";
 import Carousel from 'react-elastic-carousel';
 import { BsArrowRight } from "react-icons/bs";
 import ContactBar from "../contactBar/contactBar";

@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import Nav from "../components/header/header";
 import JobDesc from "../components/JobDesc/JobDesc";
 import JobOpening from "../components/JobOpening/JobOpening";
-import BannerImg from "../public/Assets/get-started.png"
+import BannerImg from "/Assets/get-started.png"
 import HeroBanner from "../components/HeroBanner/HeroBanner";
 
 

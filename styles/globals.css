@@ -301,7 +301,7 @@ border-radius: 4px;
 }
 
 .bgNew {
-  background-image: url("../public/Assets/Group\ 25.png");
+  background-image: url("/Assets/Group\ 25.png");
   background-size: cover;
   background-position: bottom;
   height: 300px;

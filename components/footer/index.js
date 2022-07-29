@@ -3,7 +3,7 @@ import React from "react";
 import { BsArrowUp, BsFillTelephoneFill } from "react-icons/bs";
 import { ImLocation2 } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
-import FooterLogo from "../../public/Assets/Pixel-pay-media-logo-03-1 2.png";
+import FooterLogo from "/Assets/Pixel-pay-media-logo-03-1 2.png";
 import styles from "./Footer.module.css";
 
 export default function Footer() {

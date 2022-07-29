@@ -3,7 +3,7 @@
     background-color: azure;
     height: 500px;
     padding: 0px 30px 30px 30px;
-    background-image: url('../../public/Assets/testimonials_bg_new 1.png');
+    background-image: url('/testimonials_bg_new 1.png');
     background-size: cover;
     background-repeat: no-repeat;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
 import Nav from "../components/header/header";
-import ContactImage from "../public/Assets/contactimg.png";
+import ContactImage from "/Assets/contactimg.png";
 import BeClient from "../components/beClient/beClient";
 import Footer from "../components/footer";
 

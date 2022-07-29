@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './history.module.css';
-import ima from '../../public/Assets/Rectangle 128.png'
+import ima from '/Assets/Rectangle 128.png'
 import Image from 'next/image';
 import Carousel from 'react-elastic-carousel';
-import team1 from '../../public/Assets/team1.jpeg'
-import team2 from '../../public/Assets/team2.jpeg'
+import team1 from '/Assets/team1.jpeg'
+import team2 from '/Assets/team2.jpeg'
 
 export default function History() {
     return (

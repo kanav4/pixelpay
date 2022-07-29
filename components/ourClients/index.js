@@ -2,9 +2,9 @@ import React from 'react'
 import styles from "./clients.module.css";
 import { BsArrowRight } from "react-icons/bs";
 import Image from 'next/image'
-import amazon from '../../public/Assets/Amazon logo.png';
-import agoda from '../../public/Assets/Agoda-1-02-02 1.png';
-import flipkart from '../../public/Assets/Flipkart-logo.png';
+import amazon from '/Assets/Amazon logo.png';
+import agoda from '/Assets/Agoda-1-02-02 1.png';
+import flipkart from '/Assets/Flipkart-logo.png';
 
 export default function Clients() {
     return (

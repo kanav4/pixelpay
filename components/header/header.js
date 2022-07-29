@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from 'next/image';
-import logo from '../../public/Assets/Pixel-pay-media-logo-03-1 2.png'
+import logo from '/Assets/Pixel-pay-media-logo-03-1 2.png'
 export default function Nav({ home }) {
   const [query, setQuery] = React.useState("");
   const onKeyUpHandle = (e) => {

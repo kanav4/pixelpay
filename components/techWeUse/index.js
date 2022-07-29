@@ -1,13 +1,13 @@
 import Image from "next/image";
 import styles from "./techWeUse.module.css";
-import TechBanner from "../../public/Assets/techWeUse.png";
+import TechBanner from "/Assets/techWeUse.png";
 import { BsArrowRight, BsWordpress } from "react-icons/bs";
-import AWS from "../../public/Assets/aws.png";
-import Next from "../../public/Assets/Next.png";
-import Wordpress from "../../public/Assets/Wordpress.png";
-import mongoDB from "../../public/Assets/mongoDB.png";
-import Python from "../../public/Assets/Python.png";
-import GraphQL from "../../public/Assets/GraphQL.png";
+import AWS from "/Assets/aws.png";
+import Next from "/Assets/Next.png";
+import Wordpress from "/Assets/Wordpress.png";
+import mongoDB from "/Assets/mongoDB.png";
+import Python from "/Assets/Python.png";
+import GraphQL from "/Assets/GraphQL.png";
 
 export default function TechWeUse() {
   return (
