@@ -27,22 +27,34 @@
     font-weight: 300;
 }
 
+.ccInfo a {
+    color:#000;
+}
+
+.ccIcon {
+    width: 50px;
+    height: 50px;
+}
 
 .ccIconBg {
     position: absolute;
     right: 0;
     top: 0;
-    opacity: 0.1;
+    height: 100px;
+    width: 100px;
+    opacity: 0.15;
 }
 
-
-
+.contactCard:hover .ccInfo a{
+    color: white;
+}
 
 
 .contactCard:hover {
     background: #14113A;
-    background-image: url('/Assets/blur_3.png');
-    background-position: bottom;
+    background-image: url(/_next/static/media/blur_3.0cff01c5.png);
+    background-position: -108px -124px;
+    background-repeat: no-repeat;
 }
 
 .contactCard:hover .ccWrap {

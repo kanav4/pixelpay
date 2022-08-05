@@ -2,13 +2,10 @@ import React from "react";
 import GetInTouch from "../../components/getInTouch/getInTouch";
 import Nav from "../../components/header/header";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
-import ServiceImg from "/Assets/Target.png";
-import man from "/Assets/man.png";
-import { BsArrowRight } from "react-icons/bs";
 import TechWeUse from "../../components/techWeUse";
 import styles from "./servicePage.module.css";
 import WhyUsCard from "../../components/Cards/aboutWhyUs/whyUsCard";
-import Footer from '../../components/footer'
+import Footer from "../../components/footer";
 import ContactBar from "../../components/contactBar/contactBar";
 import OurValues from "../../components/ourValues/ourValues";
 
@@ -18,88 +15,86 @@ export default function ServicePage() {
       <Nav />
       <HeroBanner
         HeroHeading={"Our Services"}
-        HeroText={"We are Multi Channel Digital Marketing Experts"}
-        HeroImage={ServiceImg}
+        HeroText={
+          "Crafting Effective and Measurable Strategies for Scaling Brands"
+        }
+        HeroImage="/Assets/Target.png"
       />
       <GetInTouch
-        sectionName={"Services"}
-        sectionTitle={"Your Brand Our Focus"}
+        sectionName={"What we do?"}
+        sectionTitle={"We Work With You, for You"}
         sectionText={
           <p>
-            Our highly experienced team specializes in delivering bespoke
-            digital marketing campaigns that are designed to achieve your
-            desired objectives. We believe that a holistic and integrated
-            approach is necessary to achieve the desired results in today’s
-            competitive digital landscape. That’s why we work with you, for you
+            We offer a full suite of digital marketing services to help you
+            reach your target audience and achieve your business goals. From SEO
+            and PPC to social media and content marketing, we have the
+            experience and expertise to help you succeed online. To do this, we
+            employ a data-driven approach to digital marketing, constantly
+            testing and refining our strategies to ensure maximum ROI.
           </p>
         }
-        sectionImg={man}
-        sectionBtn={"Join Us"}
+        sectionImg="/Assets/man.png"
+        sectionBtn={"Partner with us"}
       />
       <div className="bg-blue">
-        <OurValues />        
+        <OurValues TabSectionTitle={"Our Services"} value={1} />
       </div>
-      <TechWeUse />
-     <ContactBar/>
+
+      <TechWeUse title={"Our Tech Stack"} content={"The technology stack we use is constantly evolving as we strive to be at the forefront of innovation"}/>
+      <ContactBar />
       <div className="bg-blue">
         <div className="container">
           <div className={styles.whyUsAbout}>
             <div className="sectionHeader">
               <div className="sectionName textCenter">
-                <p>Technology</p>
-                <svg
-                  className="sectionBorder"
-                  height="14"
-                  viewBox="0 0 186 14"
-                  fill="none"
-                >
-                  <rect width="486" height="14" fill="#D1CDFF" />
-                </svg>
+                <p> Why Technology?</p>
               </div>
-
-              <h2 className="sectionTitle textCenter">
-                Pour rocket fuel on your revenue
+              <h2 className="sectionTitle">
+              Stay at the Forefront of Innovation
               </h2>
             </div>
             <div className={styles.whyUs}>
               <WhyUsCard
-                title={"Open Source"}
+                title={"Automation "}
+                ServiceIcon="/Assets/Automation.png"
+                content={"Automating processes to improve efficiency"}
+              />
+              <WhyUsCard
+                title={"Analytics "}
+                ServiceIcon="/Assets/Analytics - Copy.png"
+
+                content={"Applying data-driven insights to marketing efforts"}
+              />
+              <WhyUsCard
+                title={"Targeting"}
+                ServiceIcon="/Assets/targetting Icons.png"
+                content={"Leveraging technology for more effective targeting"}
+              />
+              <WhyUsCard
+                title={"Personalization "}
+                ServiceIcon="/Assets/Personalisation.png"
+
                 content={
-                  "Provides better stability, security, and a proper functionality to have control over your brand with ease. Raise prospects with highly personalized content"
+                  "Tailoring content and experiences to individual users"
                 }
               />
               <WhyUsCard
-                title={"Open Source"}
-                content={
-                  "Provides better stability, security, and a proper functionality to have control over your brand with ease. Raise prospects with highly personalized content"
-                }
+                title={"Future Proofing"}
+                ServiceIcon="/Assets/Future proofing.png"
+
+                content={"Staying ahead of the curve with new technology"}
               />
               <WhyUsCard
-                title={"Open Source"}
-                content={
-                  "Provides better stability, security, and a proper functionality to have control over your brand with ease. Raise prospects with highly personalized content"
-                }
-              />
-              <WhyUsCard
-                title={"Future Proof"}
-                content={
-                  "Provides better stability, security, and a proper functionality to have control over your brand with ease. Raise prospects with highly personalized content"
-                }
-              />
-              <WhyUsCard
-                content={
-                  "Provides better stability, security, and a proper functionality to have control over your brand with ease. Raise prospects with highly personalized content"
-                }
-              />
-              <WhyUsCard
-                content={
-                  "Provides better stability, security, and a proper functionality to have control over your brand with ease. Raise prospects with highly personalized content"
-                }
+                title={"Scalability"}
+                ServiceIcon="/Assets/scaling.png"
+
+                content={"Using technology to support growth and expansion"}
               />
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

@@ -1,7 +1,7 @@
 .banner{
     width: 100%;
     height: 500px;
-    background-image: url('../../Assets/Group\ 25.png') ;
+    background-image: url('../../public/Group\ 25.png');
     background-size: cover;
     overflow: hidden;
 }
@@ -24,7 +24,8 @@
 }
 .bannerHeading h1{
     margin: 10px 0px 30px 0px;
-    font-size: 2.8em;
+    font-size: 2.3em;
+    line-height: 3rem;
 
 }
 .bannerHeading h3{
@@ -32,7 +33,34 @@
     text-align: left !important;   
      /* margin-left: -147px;   */
      font-weight: 200;
+     font-size: 1.75rem;
 }
+
+.carousel .control-prev.control-arrow:before {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+}
+
+.carousel .control-next.control-arrow:before {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+}
+
+.carousel.carousel-slider .control-arrow {
+    top: 0;
+    color: #fff;
+    font-size: 26px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+}
+
 
 @media (max-width: 970px) {
     .bannerHeading{
@@ -42,7 +70,7 @@
 
 @media (max-width: 767px) {
     .bannerHeading{
-        margin: 35px;
+        margin: 45px;
         width: auto;
     }
     .bannerGrid{

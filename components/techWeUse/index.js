@@ -1,15 +1,8 @@
 import Image from "next/image";
 import styles from "./techWeUse.module.css";
-import TechBanner from "/Assets/techWeUse.png";
-import { BsArrowRight, BsWordpress } from "react-icons/bs";
-import AWS from "/Assets/aws.png";
-import Next from "/Assets/Next.png";
-import Wordpress from "/Assets/Wordpress.png";
-import mongoDB from "/Assets/mongoDB.png";
-import Python from "/Assets/Python.png";
-import GraphQL from "/Assets/GraphQL.png";
+import { BsArrowRight } from "react-icons/bs";
 
-export default function TechWeUse() {
+export default function TechWeUse({title, content}) {
   return (
     <div className="container">
       <div className={styles.techContainer}>
@@ -17,50 +10,82 @@ export default function TechWeUse() {
           <div className="sectionHeader">
             <div className="sectionName textLeft">
               <p>Technology</p>
-              <svg
-                className="sectionBorder"
-                height="14"
-                viewBox="0 0 186 14"
-                fill="none"
-              >
-                <rect width="486" height="14" fill="#D1CDFF" />
-              </svg>
             </div>
-            <h2 className="sectionTitle">Technology we use</h2>
-            <p className="sectionDesc">
-              We help clients stay competitive, reach new markets and augment
-              shareholder value
+            <h2 className="sectionTitle">{title}</h2>
+            <p>
+            {content}
             </p>
+            <a href="/contact"> 
             <div className="btn-purple">
-              <p>Join Us</p>
+              <p>Get in Touch</p>
               <span>
                 <BsArrowRight color="white" />
               </span>
             </div>
+            </a>
           </div>
         </div>
         <div className={styles.techImgs}>
           <div className={styles.techHover}>
-            <Image src={AWS} />
+            <Image src="/Assets/aws.png"
+
+              alt="tech stack"
+              width={40}
+              height={25}
+              layout="responsive"
+              objectFit="contain"
+            />
           </div>
           <div className={styles.techHover}>
-            <Image src={Next} />
+            <Image
+              src="/Assets/Next.png"
+              objectFit="contain"
+
+              alt="Next Js"
+              width={40}
+              height={25}
+              layout="responsive"
+
+            />
           </div>
 
           <div className={styles.techHover}>
-            <Image src={Wordpress} />
+            <Image src="/Assets/Wordpress.png"
+              alt="wordpress"
+              width={40}
+              height={25}
+              layout="responsive"
+              objectFit="contain"
+
+            />
           </div>
 
           <div className={styles.techHover}>
-            <Image src={mongoDB} />
+            <Image src="/Assets/mongoDB.png"
+              alt="mongoDB"
+              width={40}
+              height={25}
+              layout="responsive"               objectFit="contain"
+              />
+              
           </div>
 
           <div className={styles.techHover}>
-            <Image src={Python} />
+            <Image src="/Assets/Python.png"
+              alt="Python"
+              width={40}
+              height={25}
+              layout="responsive"              objectFit="contain"
+              />
           </div>
 
           <div className={styles.techHover}>
-            <Image src={GraphQL} />
+            <Image src="/Assets/GraphQL.png"
+              alt="GraphQL"
+              width={40}
+              height={25}
+              layout="responsive"               objectFit="contain"
+              />
           </div>
         </div>
       </div>

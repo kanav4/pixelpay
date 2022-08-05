@@ -23,13 +23,24 @@
     filter: grayscale(0);
 }
 .names {
-    font-size: 24px;
-    font-weight: 400px;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
+
+.names p{
+    color: #000;
+}
+
+.cardContainer:hover .names p{
+    color: #4038B0;
+
+}
+
 .names p {
     margin: 20px 0 5px 0;
 }
 .names span {
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #757575;
+    font-weight: 300;
 }

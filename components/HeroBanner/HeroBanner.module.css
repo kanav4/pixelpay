@@ -1,20 +1,21 @@
 .HeroBanner {
     width: 100%;
     height: 500px;
-    background-image: url('../../Assets/Group\ 25.png');
+    background-image: url('../../public/Group\ 25.png');
     background-size: cover;
     position: relative;
 }
 
 .bannerWrap {
     padding: 20px;
+    padding-bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 500px;
     position: relative;
 }
 
@@ -22,7 +23,7 @@
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 1.7em;
+    font-size: 1.75rem;
     font-weight: 300;
 }
 
@@ -32,16 +33,22 @@
 }
 
 .HeroText h2 {
-    font-size: 1.5em;
+    font-size: 2.3rem;
+    line-height: 3.5rem;
     font-weight: 600;
 }
 
 .HeroImage {
-    width: 520px;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    position: relative;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 @media (max-width: 970px) {}

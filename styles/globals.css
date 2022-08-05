@@ -2,8 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
+  line-height: 1.9rem;
+  font-size: 1rem;
+  font-weight: 300;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -20,7 +23,7 @@ h6 {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+font-weight: 600;
   vertical-align: baseline;
 }
 
@@ -30,6 +33,10 @@ ul li {
 
 ol li {
   list-style: decimal;
+}
+
+p{
+  margin-top: 0;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -47,6 +54,9 @@ section {
   display: block;
 }
 
+
+/* Custom carousel CSS Starts*/
+
 .container-carousel {
   max-width: 1330px;
   margin: auto;
@@ -58,10 +68,73 @@ section {
   margin: 30px auto;
 }
 
+button.rec.rec-arrow {
+  background-color: #D1CDFF;
+    color: white;
+    box-shadow: none;
+    outline: none !important;
+    font-size: 20px;
+    min-width: 30px;
+    height: 30px;
+    width: 30px;
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-around;
+    align-items: center;
+}
+
+button.rec.rec-arrow:hover {
+  background-color: #4038B0;
+  color: white;
+  box-shadow: none;
+
+  outline: none !important;
+}
+
+button.rec.rec-carousel-item:focus {
+  outline: none !important;
+  background: #4038B0 !important;
+  box-shadow: none;
+}
+
+.rec.rec-dot {
+  width: 14px !important;
+  border-radius: 6px !important;
+  height: 5px !important;
+  margin: 0 4px !important;
+  border: none;
+  background: #D5D6F9;
+  box-shadow: none;
+}
+
+.rec.rec-dot:hover {
+  box-shadow: none;
+}
+.rec.rec-dot_active {
+  box-shadow: none;
+  border-radius: 6px !important;
+  height: 5px !important;
+  width: 24px !important;
+  background: #5D5AEA;
+  border: none;
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+  margin: 0px 7px 2px 5px !important;
+  display: inline-block;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  content: "";
+}
+
+/* Custom carousel CSS Ends*/
+
+
 .container {
   max-width: 1200px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .btn-white {
@@ -74,10 +147,66 @@ section {
   justify-content: center;
   gap: 10px;
   cursor: pointer;
+  border: 2px solid #fff;
   color: black;
   transition: 0.3s;
-  border: 1px solid white;
   height: 51px;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  flex-direction: column;
+  flex-flow: column;
+  list-style: none;
+}
+
+
+.carousel .control-prev.control-arrow:before {
+  border: solid #3C35A0 !important; 
+  border-width: 0 3px 3px 0 !important;
+  display: inline-block;
+  padding: 6px;
+}
+
+
+.carousel .control-next.control-arrow:before {
+  border: solid #3C35A0 !important; 
+  border-width: 0 3px 3px 0 !important;
+  display: inline-block;
+  padding: 6px;
+}
+
+
+.carousel.carousel-slider .control-arrow {
+  top: 40% !important;
+  color: #fff;
+  font-size: 20px !important;
+  bottom: 0;
+  margin-top: 0;
+  margin: 0 20px;
+  padding: 5px;
+  height: fit-content !important;
+  transform: rotate(-45deg);
+}
+
+.control-arrow.control-next{
+-webkit-transform: rotate(-45deg);
+}
+
+.control-arrow.control-prev{
+  -webkit-transform: rotate(135deg) !important; 
+  }
+
+  .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+    filter: none !important;
+    opacity: 1 !important;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    background: #FDFDFD !important;
+    border: 0;
+    font-size: 32px;
+    border-radius: 100%;
+    cursor: pointer;
 }
 
 .btn-white span {
@@ -88,18 +217,21 @@ section {
 }
 
 .btn-white:hover {
-  background-color: #15113a;
-  color: white;
-  border: 1px solid white;
+  color: black;
 }
 
 .btn-white:hover span {
+  transform: translateX(7px);
+}
+
+.ourValueTabNew:hover span {
   transform: translateX(10px);
+  transition: 0.3s;
 }
 
 .bg-blue {
   background-color: #F4F6FD;
-  padding: 30px;
+  padding: 40px 30px;
 }
 
 .JobCard {
@@ -111,19 +243,12 @@ section {
   transition: all 0.3s;
 }
 
-/* .active {
-  max-width: 585px;
-  min-height: 248px;
-  background: #fff;
-  padding: 35px;
-  cursor: pointer;
-  transition: all 0.3s;
-  background: #14113A;
-  background-image: url('/Assets/blur_3.png');
-  background-position: bottom;
-} */
-
-
+.btn-purple p {
+  margin: 0;
+}
+.btn-white p {
+  margin: 0;
+}
 .btn-purple {
   background-color: #4038B0;
   width: 260px;
@@ -136,9 +261,15 @@ section {
   cursor: pointer;
   color: rgb(255, 255, 255);
   transition: 0.3s;
-  border: 1px solid #15113a;
   height: 51px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+
+button {
+  border: 0 !important;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .btn-purple span {
@@ -188,6 +319,7 @@ table {
 
 .textCenter {
   text-align: center;
+  margin: auto !important;
 }
 
 .textLeft {
@@ -220,24 +352,30 @@ table {
 .sectionHeader {
   max-width: 700px;
   margin: auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 35px;
+  /* margin-top: 40px; */
 }
 
 .sectionWrap {
   width: 100%;
-  padding-bottom: 30px;
+  margin: 40px 0;
 }
 
 .sectionName {
   position: relative;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.75rem;
   line-height: 115.18%;
   color: #14113A;
   z-index: 9;
   width: fit-content;
-  margin: auto;
+  margin-left: 0px;
+}
+
+.sectionName p{
+  border-bottom: 13px solid #d1cdff;
+  height: 35px;
+  width: 103%;
 }
 
 .sectionBorder {
@@ -260,6 +398,7 @@ table {
 } */
 
 .ourValueTab {
+  cursor: pointer;
   font-size: 1.1rem;
   display: flex;
   background-color: #F4F6FD;
@@ -269,25 +408,71 @@ table {
   padding: 0 20px;
   height: 70px;
   border-radius: 4px;
+  transition: all 0.3s;
 }
+
+.ourValueTab:hover {
+  background-color: #4038B0;
+  color: #fff;
+}
+
+.ourValueTabNew {
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  background-color: #ffffff;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.ourValueTabNew span {
+  font-size: 1.4rem;
+
+}
+
+
+.ourValueTab span {
+  font-size: 1.4rem;
+  display: flex;
+}
+
+
+.ourValueTabNew:hover {
+  background-color: #4038B0;
+  color: white;
+}
+
 .valueTabsActive {
   color: #fff;
   font-size: 1.1rem;
-display: flex;
-background-color: #4038B0;
-align-content: center;
-justify-content: space-between;
-align-items: center;
-padding: 0 20px;
-height: 70px;
-border-radius: 4px;
+  display: flex;
+  background-color: #4038B0;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  border-radius: 4px;
+}
+
+.valueTabsActive span {
+  transform: translateX(10px);
+  transition: all 0.3s;
+  font-size: 1.4rem;
+  display: flex
 }
 
 .sectionTitle {
   font-weight: 600;
-  font-size: 2.1rem;
+  font-size: 2.3rem;
   line-height: 1.1em;
   color: #070707;
+  margin-bottom: 20px;
 }
 
 .blogContainer {
@@ -301,7 +486,7 @@ border-radius: 4px;
 }
 
 .bgNew {
-  background-image: url("/Assets/Group\ 25.png");
+  background-image: url('../public/Group\ 25.png');
   background-size: cover;
   background-position: bottom;
   height: 300px;
@@ -319,6 +504,10 @@ border-radius: 4px;
 
 .contactusText {
   font-size: 2.6em;
+}
+
+.blogsArchive {
+  margin: 40px 0;
 }
 
 
@@ -347,13 +536,25 @@ border-radius: 4px;
     background-color: #F4F6FD;
     padding: 10px;
   }
-  .container-carousel-sml{
+
+  .container-carousel-sml {
     width: auto;
   }
-  .sectionHeader{
+
+  .sectionHeader {
     margin-top: 0;
   }
-  .sectionWrap{
+
+  .sectionWrap {
     padding-top: 30px;
   }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+
+.container-carousel {
+  margin: 5px;
+}
 }

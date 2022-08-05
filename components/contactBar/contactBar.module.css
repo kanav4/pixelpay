@@ -5,12 +5,13 @@
     padding: 15px;
     color: white;
     display: flex;
+    line-height: 3.5rem;
     justify-content: space-between;
     align-items: center;
   }
   
   .contactusText {
-    font-size: 2.6em;
+    font-size: 2.3rem;
   }
 
 
@@ -28,5 +29,9 @@
   }
   .bgNew {
       height: auto;
+  }
+
+  .contactus {
+    line-height: 2rem;
   }
   }

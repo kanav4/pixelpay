@@ -9,7 +9,7 @@
     background-color: #F4F6FD;
     max-width: 100%;
     margin: 0;
-    padding: 30px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +33,9 @@
     margin-bottom: 20px;
 }
 
+.aboutValues {
+    margin: 40px 0;
+}
 .faceCardContainer{
     display: grid;
     gap: 10px;

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from 'next/image';
-import logo from '/Assets/Pixel-pay-media-logo-03-1 2.png'
 export default function Nav({ home }) {
   const [query, setQuery] = React.useState("");
   const onKeyUpHandle = (e) => {
@@ -48,7 +47,7 @@ export default function Nav({ home }) {
                 <a className="nav-logo">
                   <Image
                     className="logo"
-                    src={logo}
+                    src="/Assets/Pixel-pay-media-logo-03-1 2.png"
                     alt="header logo"
                     height={50}
                     width={85}
@@ -67,7 +66,7 @@ export default function Nav({ home }) {
                   <div id="mlogo" className="logoImg2">
                     <Image
                       className="logo"
-                      src={logo}
+                      src="/Assets/Pixel-pay-media-logo-03-1 2.png"
                       alt="header logo"
                       height={50}
                       width={85}
@@ -83,7 +82,7 @@ export default function Nav({ home }) {
                 </li>
                 <li className="nav-item">
                   <Link href={"/services"}>
-                    <a className="nav-link">Our Services</a>
+                    <a className="nav-link">Services</a>
                   </Link>
                 </li>
                 <li className="nav-item">

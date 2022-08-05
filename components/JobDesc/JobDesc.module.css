@@ -2,12 +2,12 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-bottom: 30px;
-    margin: auto;
+    margin: 40px auto;
 }
 
 .jobHeading {
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.6rem;
 }
 
 
@@ -15,22 +15,23 @@
 .jobDesc {
     font-style: normal;
     font-weight: 300;
-    font-size: 1.1em;
-    line-height: 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
     color: #070707;
     margin-top: 20px;
 }
 
 
 .applyNow {
-    padding: 20px;
+    padding: 20px 70px;
     margin: 70px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     float: right;
     position: sticky;
-    top: 0%;
+    top: 0;
+    height: 420px;
 }
 
 .jobShare {
@@ -40,9 +41,21 @@
 }
 
 
-@media (max-width: 970px) {}
+/* @media (max-width: 970px) {} */
 
 @media (max-width: 767px) {
+    .applyNow {
+        padding: 0px;
+        margin: 0px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: right;
+        position: sticky;
+        top: 0;
+        height: auto;
+    }
+    
     .jdWrap {
         padding: 10px;
         grid-template-columns: 1fr;

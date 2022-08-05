@@ -1,11 +1,7 @@
-import ContactCard from "../Cards/contactCard/ContactCard";
-import styles from "./beClient.module.css";
-import LocationIcon from "/Assets/location.png";
-import EmailIcon from "/Assets/mail.png";
-import BellIcon from "/Assets/bell.png";
-import ScreenIcon from "/Assets/screen.png";
-import { MdAmpStories } from "react-icons/md";
-import Application from "./Application";
+import ContactCard from '../Cards/contactCard/ContactCard';
+import styles from './beClient.module.css';
+import LocationIcon from '../../public/Assets/location.png';
+import Link from 'next/link';
 
 export default function BeClient() {
   return (
@@ -13,43 +9,36 @@ export default function BeClient() {
       <div className={styles.beClient}>
         <div className="container">
           <div className="sectionHeader">
-          <div className="sectionName textCenter">
+            <div className="sectionName textCenter">
               <p>Contact Us</p>
-              <svg
-                className="sectionBorder"
-                height="14"
-                viewBox="0 0 186 14"
-                fill="none"
-              >
-                <rect width="486" height="14" fill="#D1CDFF" />
-              </svg>
             </div>
-            <h2 className="sectionTitle textCenter">Become a Client </h2>
+            <h2 className="sectionTitle textCenter">
+            Our Door Is Always Open for New Clients and New Opportunities.            </h2>
           </div>
           <div className={styles.contactGrid}>
             <div className={styles.contactDetail}>
               <ContactCard
                 contactIcon={LocationIcon}
-                ContactDetail={"Location"}
+                ContactDetail={'Location'}
                 ContactInfo={
                   <span>
-                    7th Floor, Awfis, <br />
-                    Ambience Mall, Gurgaon
+                    AWFIS, &amp; 7th floor Ambience Island, <br/>DLF Phase 3, Sector 24, <br/>Gurugram, Haryana 122022
+
+
                   </span>
                 }
               />
               <ContactCard
-                contactIcon={EmailIcon}
-                ContactDetail={"Email ID"}
+                contactIcon="/Assets/mail.png"
+                ContactDetail={'Email ID'}
                 ContactInfo={
                   <span>
-                    nfo@pixepaymedia.com <br />
-                    hr@pixelpaymedia.com
+                    <Link href="mailto:info@pixelpaymedia.com"><a> info@pixelpaymedia.com</a></Link><br/><Link href="mailto:marketing@pixelpaymedia.com"><a> marketing@pixelpaymedia.com</a></Link>
                   </span>
                 }
               />
-              <ContactCard
-                contactIcon={BellIcon}
+              {/* <ContactCard
+                contactIcon="/Assets/bell.png"
                 ContactDetail={"Phone No."}
                 ContactInfo={
                   <span>
@@ -58,14 +47,14 @@ export default function BeClient() {
                 }
               />
               <ContactCard
-                contactIcon={ScreenIcon}
+                contactIcon="/Assets/screen.png"
                 ContactDetail={"Business Hours"}
                 ContactInfo={
                   <span>
                     Monday - Friday <br /> 9:00 AM - 6:00 PM
                   </span>
                 }
-              />
+              /> */}
             </div>
             <div className={styles.contactMap}>
               <iframe
@@ -80,24 +69,6 @@ export default function BeClient() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className={styles.messageUs}>
-        <div className="sectionHeader">
-        <div className="sectionName textCenter">
-              <p>Message Us</p>
-              <svg
-                className="sectionBorder"
-                height="14"
-                viewBox="0 0 186 14"
-                fill="none"
-              >
-                <rect width="486" height="14" fill="#D1CDFF" />
-              </svg>
-            </div>
-          <h2 className="sectionTitle textCenter">Become a Client </h2>
-        </div>
-        <Application />
       </div>
     </>
   );

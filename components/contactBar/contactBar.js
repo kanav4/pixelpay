@@ -6,14 +6,17 @@ export default function ContactBar() {
       <div className="container">
         <div className={styles.contactus}>
           <div className={styles.contactusText}>
-            Give wings to your business <br /> with our out-of-the-box solutions
+          <h3>Want to Scale Your Business?<br/>
+Just Drop Us a Line.</h3>
           </div>
+          <a href="/contact">
           <div className="btn-white">
             <p>Contact Us</p>
             <span>
               <BsArrowRight />
             </span>
           </div>
+          </a>
         </div>
       </div>
     </div>

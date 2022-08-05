@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsArrowUp, BsFillTelephoneFill } from "react-icons/bs";
 import { ImLocation2 } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
-import FooterLogo from "/Assets/Pixel-pay-media-logo-03-1 2.png";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -16,7 +16,9 @@ export default function Footer() {
         }} />
         </div>
         <div className={styles.Branding}>
-          <Image src={FooterLogo} />
+          <div className={styles.footerLogo}>
+          <Image alt="PixelPay Media Logo" width={50} height={30} layout="responsive" src="/Assets/Pixel-pay-media-logo-03-1 2.png" />
+          </div>
           <p className={styles.About}>
             Helping brands grow is our passion. From start-ups to established
             enterprises, we offer tailored solutions that increase leads, drive
@@ -26,31 +28,32 @@ export default function Footer() {
         <div className={styles.FooterMenu}>
           <h4>Our Links</h4>
           <ul>
-            <li>Contact US</li>
-            <li>About US</li>
-            <li>FAQ</li>
-            <li>Privacy Policy</li>
-            <li>Terms &amp; Conditions</li>
-            <li>Blog</li>
-            <li>Partner With Us</li>
+          <li><Link href="/about"><a>About Us</a></Link></li>
+          <li><Link href="/services"><a>Services</a></Link></li>
+          <li><Link href="/career"><a>Careers </a></Link></li>
+            <li><Link href="/blog"><a>Blog</a></Link></li>
+            <li><Link href="/contact"><a>Contact Us</a></Link></li>
+            <li><Link href="#"><a>Privacy Policy</a></Link></li>
           </ul>
         </div>
         <div className={styles.Contact}>
           <h4>Contact Us</h4>
           <p>
-            <ImLocation2/> AWFIS, &amp; 7th floor Ambience Island, DLF Phase 3, Sector 24,
+            <span><ImLocation2/></span> AWFIS, &amp; 7th floor Ambience Island, DLF Phase 3, Sector 24,
             Gurugram, Haryana 122022, India
           </p>
           <div className={styles.Emails}>
-            <p><MdEmail/> info@pixelpaymedia.com</p>
-            <p><MdEmail/> services@pixelpaymedia.com</p>
+            <p> <span><MdEmail/> </span><Link href="mailto:info@pixelpaymedia.com"><a> info@pixelpaymedia.com</a></Link><Link href="mailto:marketing@pixelpaymedia.com"><a> marketing@pixelpaymedia.com</a></Link></p>
           </div>
           <div className={styles.Tel}>
-            <p><BsFillTelephoneFill/> +91 896-545-4545</p>
-            <p><BsFillTelephoneFill/> +91 896-545-4545</p>
+          <p> <span><BsFillTelephoneFill/></span>  <Link href="tel:+91 896-545-4545"><a>+91 896-545-4545</a></Link><Link href="tel:+91 896-545-4545"><a>+91 896-545-4545</a></Link></p>
           </div>
         </div>
+       
       </div>
+      <div className={styles.copyrightText}>
+          <p>© 2022 PixelPay Media Pvt. Ltd. All Rights Reserved.</p>
+        </div>
     </div>
   );
 }

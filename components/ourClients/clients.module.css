@@ -1,4 +1,8 @@
-.clients{
+.clients {
+    margin: 40px 0;
+}
+
+.clientsWrap{
     max-width: 1200px;
     margin: auto;
     height: 450px;
@@ -7,7 +11,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    margin: 15px auto;
+    /* margin: 15px auto; */
     width: 100%;
 }
 
@@ -40,30 +44,40 @@
     justify-content: center;
     align-items: center;
     justify-items: end;
-    gap: 5px;
+    gap: 30px;
     }
     
     .div1 { 
         grid-area: 1 / 1 / 2 / 2;
         width: 100%;
         height: 100%;
+        border: 1px solid #DEDEDE;
+padding: 10px;
         display: grid;
         text-align: center;
         align-items: center;
         justify-items: center;
+        transition: all 0.4s;
      }
     .div2 { 
         width: 100%;
         height: 100%;
-        display: grid;
+        display: grid;    border: 1px solid #DEDEDE;
+        padding: 10px;
+
         text-align: center;
         align-items: center;
         justify-items: center;
         grid-area: 1 / 2 / 2 / 3; 
+        transition: all 0.4s;
+
     }
     .div3 { 
-        width: 100%;
-        height: 100%;
+        width: 100%;        transition: all 0.4s;
+
+        height: 100%;    border: 1px solid #DEDEDE;
+        padding: 10px;
+
         display: grid;
         text-align: center;
         align-items: center;
@@ -74,16 +88,21 @@
         width: 100%;
         height: 100%;
         display: grid;
-        text-align: center;
+        text-align: center;    border: 1px solid #DEDEDE;
+        padding: 10px;
+
         align-items: center;
         justify-items: center;
         grid-area: 2 / 2 / 3 / 3; 
     }
     .div5 { 
         width: 100%;
-        height: 100%;
+        height: 100%;        transition: all 0.4s;
+        padding: 10px;
+
         display: grid;
-        text-align: center;
+        text-align: center;    border: 1px solid #DEDEDE;
+
         align-items: center;
         justify-items: center;
         grid-area: 3 / 1 / 4 / 2; 
@@ -91,9 +110,12 @@
     .div6 { 
         width: 100%;
         height: 100%;
-        display: grid;
+        display: grid;        transition: all 0.4s;
+
         text-align: center;
-        align-items: center;
+        align-items: center;    border: 1px solid #DEDEDE;
+        padding: 10px;
+
         justify-items: center;
         grid-area: 3 / 2 / 4 / 3; 
     }
@@ -131,7 +153,12 @@
 }
 
 @media (max-width: 767px) {
-    .clients{
+.clientsWrap {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 10px 5px 35px 5px;
+}  
+  .clients{
         width: auto;
         margin: 15px;
         height: 666px;
@@ -143,6 +170,6 @@
         grid-gap: 20px;
     }
     .clientsImgContainer {
-        gap: 55px;
+        gap: 35px;
         }
 }

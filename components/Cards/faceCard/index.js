@@ -9,10 +9,10 @@ export default function FaceCard({name , des , person}) {
     <div className={styles.cardImgGrad}>
       <div className={styles.cardImg}>
         <Image
+        alt='our person image'
           src={person}
-          width={100}
-          height={100}
-          layout="responsive"
+          width={210}
+          height={210}
         />
       </div>
     </div>

@@ -2,11 +2,16 @@
     max-height: 100%;
     background: #14113A;
     max-width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
     background-position: center;
-    font-size: 0.9em;
-    background-image: url(../../Assets/Group\ 22.png);
+    background-image: url('../../public/Group\ 22.png');
     background-size: cover;
     
+}
+
+.footerLogo{
+    width: 200px;
 }
 
 .goTop {
@@ -33,7 +38,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    align-items: flex-start;
     justify-items: center;
     margin: auto;
     max-width: 1200px;
@@ -42,7 +47,9 @@
 }
 .FooterWrap h4 {
     color: #fff;
-    font-size: 1.7em;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 .FooterMenu {
     display: flex;
@@ -63,20 +70,61 @@
     gap: 10px;
     padding-left: 0px;
     color: #fff;
+    margin: 0;;
 }
 
-.FooterMenu li {
+.FooterMenu li{
     list-style: none;
+}
+
+.FooterMenu a{
+    color: #fff;
+
 }
 
 .Contact {
     display: flex;
     flex-direction: column;
+    position: relative;
+
 }
 
 .Contact p{
     color: #fff;
+    margin-left: 30px;
+    display: grid;
+    align-items: center;
+}
 
+.Contact p span {
+    position: absolute;
+    left: -5px;
+    font-size: 1.6rem;
+}
+
+.copyrightText {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.copyrightText::before{
+    position: absolute;
+    content: '';
+    height: 0.07rem;
+    background-color: #44416e;
+    width: 100%;
+    left: 0;
+    bottom: 35px;
+}
+
+.Tel a, .Emails a{
+    color:white;
+}
+
+.copyrightText p{
+    margin: 0 !important;
 }
 
 @media (max-width: 729px) {

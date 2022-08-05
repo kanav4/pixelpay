@@ -4,21 +4,12 @@ import Image from "next/image"
 
 export default function GetInTouch({sectionName, sectionTitle, sectionText, sectionImg, sectionBtn}) {
   return (
-    <div>
       <div className="container">
         <div className={styles.getInTouch}>
           <div className={styles.content}>
             <div className={styles.headings}>
               <div className="sectionName">
                 <p>{sectionName}</p>
-                <svg
-                  className="sectionBorder"
-                  height="14"
-                  viewBox="0 0 186 14"
-                  fill="none"
-                >
-                  <rect width="486" height="14" fill="#D1CDFF" />
-                </svg>
               </div>
               <h2 className="sectionTitle">
                 {sectionTitle}
@@ -27,12 +18,14 @@ export default function GetInTouch({sectionName, sectionTitle, sectionText, sect
             <div className={styles.text}>
             {sectionText}
             </div>
+            <a href="/contact">
             <div className="btn-purple">
              {sectionBtn}
               <span>
                 <BsArrowRight />
               </span>
             </div>
+            </a>
           </div>
           <div className={styles.aboutImg}>
             <Image
@@ -40,11 +33,12 @@ export default function GetInTouch({sectionName, sectionTitle, sectionText, sect
               alt="Picture of the author"
               className={styles.image}
               layout="fill"
+              width={100}
+              height={100}
               objectFit="contain"
             />
           </div>
         </div>
       </div>
-    </div>
   );
 }

@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
 }
 
 .headings{
@@ -47,14 +47,15 @@
 
 .perks{
     background-color: white;
-    height: 80px;
+    min-height: 107px;
+    line-height: 1.6rem;
     display: grid;
     align-items: center;
     justify-items: center;
     justify-content: center;
     padding: 15px;
-    font-weight: 500;
-    font-size: 1.3em;
+    font-weight: 600;
+    font-size: 1.2rem;
     text-align: center;
     cursor: pointer;
 }
@@ -62,19 +63,39 @@
 .perksActive{
         position: relative;
         background-color: #4038B0;
-        height: 80px;
+        /* background-image: url(../../public/Assets/Group\ 8.png); */
+        /* height: 80px; */
         display: grid;
+        min-height: 107px;
         align-items: center;
+        line-height: 1.6rem;
         justify-items: center;
         justify-content: center;
         padding: 15px;
         font-weight: 500;
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.2rem;
         color: white;
         cursor: pointer;
 }
 
+
+.triangle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 0px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 0px solid black;
+    top: 100%;
+    left: 88%;
+    margin-left: -10px;
+    content: '';
+    transform: rotate(45deg);
+    margin-top: 10px;
+    background: palevioletred;
+}
 .perksActive::after{
     position: absolute;
     width: 20px;
@@ -84,18 +105,19 @@
     border-bottom: 2px solid black;
     border-left: 0px solid black;
     top: 100%;
-    left: 50%;
+    left: 88%;
     margin-left: -10px;
     content: '';
     transform: rotate(45deg);
     margin-top: 10px;
-    background-color: #de302f;
+    background: palevioletred;
 }
 
 .visible{
     display: inline-block;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 .hidden{
     display: none;
@@ -116,4 +138,8 @@
     .aboutImg {
        display: none;
       }
+
+      .para {
+        width: 100%;
+    }
 }

@@ -1,9 +1,10 @@
-import React from "react";
-import HeroBanner from "../components/HeroBanner/HeroBanner";
-import Nav from "../components/header/header";
-import ContactImage from "/Assets/contactimg.png";
-import BeClient from "../components/beClient/beClient";
-import Footer from "../components/footer";
+import React from 'react';
+import HeroBanner from '../components/HeroBanner/HeroBanner';
+import Nav from '../components/header/header';
+import ContactImage from '../public/Assets/contactimg.png';
+import BeClient from '../components/beClient/beClient';
+import Footer from '../components/footer';
+import ContactFormm from '../components/ContactFormm';
 
 export default function ContactUs() {
   return (
@@ -11,12 +12,13 @@ export default function ContactUs() {
       <Nav />
       <HeroBanner
         HeroImage={ContactImage}
-        HeroHeading={"Contact"}
+        HeroHeading={'Contact'}
         HeroText={
-          "Give wings to your business with our out-of-the-box solutions"
+          'We’ll Help You Get Your Digital Marketing Strategy off the Ground'
         }
       />
-      <BeClient/>
+      <BeClient />
+      <ContactFormm />
       <Footer />
     </div>
   );

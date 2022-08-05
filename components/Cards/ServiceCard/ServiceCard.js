@@ -1,16 +1,18 @@
 import Image from "next/image";
+import Link from "next/link"
 import styles from "./ServiceCard.module.css";
 import { BsArrowRight } from "react-icons/bs";
 
-export default function ServiceCard({ ServIcon , index , title , content }) {
+export default function ServiceCard({  index, title, content, ServiceIcon }) {
   return (
     <div className={styles.serviceCard}>
+      <Link href="/services">
+        <a>
       <div className={styles.scWrap}>
         <span className={styles.Openings}>0{index}</span>
         <div className={styles.scIcon}>
-          <Image src={ServIcon} width={60} height={60} />
+          <Image className={styles.image} src={ServiceIcon} alt="service icons" width={60} height={60}  />
         </div>
-        <p className={styles.caption}>Marketing</p>
         <div className={styles.scName}>
           <h3>{title}</h3>
         </div>
@@ -23,6 +25,8 @@ export default function ServiceCard({ ServIcon , index , title , content }) {
           <p>Read More</p><span><BsArrowRight /></span>
         </div>
       </div>
+      </a>
+      </Link>
     </div>
   );
 }

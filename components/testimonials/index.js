@@ -8,7 +8,7 @@ export default function Testimonials() {
     return (
         <div className={styles.testimonials}>
             <div className={styles.content}>
-                <span><FaQuoteLeft /></span>
+                <span><FaQuoteLeft size={40}/></span>
                 <div className={styles.contentHead}>
                     <div>
                         <h2>Testimonials</h2>

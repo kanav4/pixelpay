@@ -2,7 +2,7 @@
     background-color: #F4F6FD;
     max-width: 100%;
     margin: 0;
-    padding: 30px;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .bgNew {
-    background-image: url("../../Assets/Group\ 23.png");
+    background-image: url("../../public/Group\ 23.png");
     background-size: cover;
     background-position: bottom;
     height: 300px;

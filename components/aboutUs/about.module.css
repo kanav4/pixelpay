@@ -18,19 +18,36 @@
     margin: 0 0 0 200px;
 } */
 
-.text p{
+.text{
     color: #303030cf;
+    line-height: 1.9rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    position: relative;
 }
 
 .content ul li{
-    list-style-type: circle;
+    list-style-type: none;
     color: #303030cf;
     margin: 5px 0;
+}
+
+.text ul li{
+    font-weight: 300;
+    font-size: 1.2rem;
 }
 
 .text{
     margin-bottom: 20px;
     
+}
+
+.text span {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 5px;
+    margin-top: 5px;
+    color: #4038b0;
 }
 
 .aboutImg {

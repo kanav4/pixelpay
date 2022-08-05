@@ -1,35 +1,26 @@
-import JobCard from "../Cards/JobCard/JobCard";
-import styles from "./JobOpening.module.css";
-import MediaBuyingIco from "/Assets/4-3.png";
-import data from "../../data.json";
-import JobDesc from "../JobDesc/JobDesc";
+import JobCard from '../Cards/JobCard/JobCard';
+import styles from './JobOpening.module.css';
+import JobDesc from '../JobDesc/JobDesc';
 
-export default function JobOpening({ state, setState }) {
+export default function JobOpening({ data , state, setState }) {
   return (
     <>
       <div className={styles.joWrap}>
         <div className="container">
           <div className="sectionHeader">
             <div className="sectionName textCenter">
-              <p>Job Opening</p>
-              <svg
-                className="sectionBorder"
-                height="14"
-                viewBox="0 0 186 14"
-                fill="none"
-              >
-                <rect width="486" height="14" fill="#D1CDFF" />
-              </svg>
+              <p>Current Job Openings</p>
             </div>
 
-            <h2 className="sectionTitle textCenter">Want to join our team</h2>
+            <h2 className="sectionTitle textCenter">
+            Explore Our Open Positions and Find the Perfect Fit for You
+            </h2>
           </div>
           <div className={styles.currentOpenings}>
             {data.map((item, i) => (
               <div key={i} onClick={() => setState(i)}>
                 <JobCard
                   active={state === i}
-                  ServIcon={MediaBuyingIco}
                   item={item}
                 />
               </div>
@@ -40,9 +31,7 @@ export default function JobOpening({ state, setState }) {
 
       <div className="container">
         {data.map((item, i) => (
-          <div key={i} >
-          {state === i ? <JobDesc item={item} /> : null}
-          </div>
+          <div key={i}>{state === i ? <JobDesc item={item} /> : null}</div>
         ))}
       </div>
     </>

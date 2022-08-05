@@ -1,13 +1,12 @@
 .beClient {
     background: #F4F6FD;
-    padding: 10px;
+    padding: 40px 10px;
     margin: auto;
-    margin-bottom: 40px;
 }
 
 .messageUs {
     background: #fff;
-    padding: 10px;
+    padding: 40px 10px;
     padding-bottom: 0;
     margin: auto;
     margin-bottom: 40px;
@@ -16,13 +15,13 @@
 
 .contactGrid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
 .contactDetail {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 30px;
 }
 
@@ -44,6 +43,12 @@
         grid-template-columns: 1fr !important;
         justify-items: center;
 
+    }
+
+    .beClient {
+        background: #F4F6FD;
+        padding:10px;
+        margin: auto;
     }
 }
 

@@ -26,10 +26,11 @@
     font-weight: 600;
     -webkit-font-smoothing: antialiased;
     pointer-events: none;
-    transition: all 0.3s X
+    transition: all 0.3s;
 }
 
 .scIcon {
+    margin-bottom: 35px;
     padding: 15px !important;
     width: 100px;
     height: 100px;
@@ -47,7 +48,7 @@
     position: absolute;
     width: 110px;
     height: 110px;
-    background-image: url(/Assets/spindots.png);
+    background-image: url('../../../public/spindots.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,10 +92,12 @@
 }
 
 .scName {
-    font-size: 1.4em;
+    font-size: 1.2rem;
     line-height: 35px;
     text-align: center;
     color: #322B89;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .scInfo {
@@ -103,8 +106,8 @@
     line-height: 30px;
     text-align: center;
     color: #000000;
-    min-height: 160px;
-
+    /* min-height: 160px; */
+    margin-bottom: 0;
 }
 
 .scReadmore {
@@ -121,9 +124,11 @@
 }
 
 
+
+
 .serviceCard:hover {
     background: #14113A;
-    background-image: url('/Assets/blur_3.png');
+    background-image: url('../../../public/blur_3.png');
     border: 1px solid #DFDFDF;
     border-radius: 4px;
     background-size: cover;
@@ -131,6 +136,14 @@
 
 .serviceCard:hover .Openings {
     color: #221E57;
+}
+
+.scReadmore span {
+    transition: all 0.3s;
+}
+
+.serviceCard:hover .scReadmore span {
+    transform: translateX(10px);
 }
 
 .serviceCard:hover .caption, .serviceCard:hover .scName, .serviceCard:hover .scInfo p, .serviceCard:hover .scReadmore {
@@ -146,4 +159,12 @@
     animation: rotating 5s linear infinite;
     filter: brightness(0) invert(1);
 
+}
+
+@media (max-width: 767px) {
+
+    .serviceCard {
+        margin: 0;
+    }
+    
 }
